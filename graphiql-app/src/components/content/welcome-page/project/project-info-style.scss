@@ -1,0 +1,48 @@
+.project-info {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 60px 0;
+  color: var(--bs-white);
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+  }
+}
+
+.project-info-description {
+  max-width: 510px;
+}
+
+.project-info-logo {
+  width: 10rem;
+}
+
+.project-info-description__heading {
+  margin: 0;
+  padding: 0 0 20px;
+  font-size: 60px;
+  color: var(--bs-blue);
+}
+
+.project-info-description__text {
+  font-size: 22px;
+}
+
+.project-info-logo {
+  img {
+    display: block;
+    filter: invert(77%) sepia(12%) saturate(2447%) hue-rotate(83deg) brightness(109%) contrast(90%)
+      drop-shadow(0 0 2px rgba(60, 242, 129, 0.9));
+  }
+}
+
+@media (max-width: 375px) {
+  .project-info-description {
+    max-width: 270px;
+  }
+}

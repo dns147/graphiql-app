@@ -1,0 +1,67 @@
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  border-bottom: 1px solid;
+  padding-bottom: 7px;
+}
+
+.query-form {
+  overflow: auto;
+  height: 90%;
+}
+
+.query-form::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: transparent;
+  width: 13px;
+  height: 13px;
+}
+
+.query-form::-webkit-scrollbar-thumb {
+  background-color: #e6e8ec;
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+  background-image: URL(../../assets/icons/scroll.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.query-form::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px #ffffff;
+  border-radius: 10px;
+}
+
+.query-container {
+  padding: 0 10px;
+
+  .category-container {
+    padding: 0 10px 5px 10px;
+
+    .query-arguments {
+      margin-bottom: 10px;
+    }
+
+    .param-name {
+      color: #ffab91;
+    }
+  }
+
+  .query-item-label {
+    color: #ffeb3b;
+
+    .query-item-input {
+      margin-right: 5px;
+    }
+
+    .type-fields-string {
+      color: #8bc34a;
+    }
+  }
+
+  .query-item-label:hover {
+    cursor: pointer;
+    color: var(--bs-link-hover-color);
+  }
+}
